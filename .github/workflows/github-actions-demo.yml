@@ -4,5 +4,6 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
-      - run: ls
-      - run: cat /github/workspace/firstFile.txt
+      - name: Check out repository code
+        uses: actions/checkout/@V2
+      - run: ls ${{ github.workspace }}
