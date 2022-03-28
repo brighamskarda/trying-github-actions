@@ -4,5 +4,5 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
-      - run: curl https://www.timeapi.io/api/Time/current/zone?timeZone=MST
+      - run: ls
       - run: cat /github/workspace/firstFile.txt
