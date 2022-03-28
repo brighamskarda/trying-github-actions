@@ -5,3 +5,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: curl https://www.timeapi.io/api/Time/current/zone?timeZone=MST
+      - run: cat firstFile.txt
