@@ -7,6 +7,9 @@ jobs:
       - name: Check out repository code
         uses: actions/checkout/@v2
       - run: |
-              ls ${{ github.workspace }}
-              cat firstFile.txt
-              echo "Hello World"
+              counter=0;
+              for FILE in *;
+              do echo $FILE;
+              let counter=counter+1;
+              echo {$counter};
+              done
