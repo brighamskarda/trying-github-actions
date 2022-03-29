@@ -6,5 +6,7 @@ jobs:
     steps:
       - name: Check out repository code
         uses: actions/checkout/@v2
-      - run: ls ${{ github.workspace }}
-      - run: cat firstFile.txt
+      - run: |
+              ls ${{ github.workspace }}
+              cat firstFile.txt
+              echo "Hello World"
